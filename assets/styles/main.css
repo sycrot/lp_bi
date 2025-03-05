@@ -41,8 +41,8 @@
 }
 
 #headBanner .banner {
-  padding-top: 171px;
-  padding-bottom: 164px;
+  padding-top: 159px;
+  padding-bottom: 163px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -57,7 +57,7 @@
   font-size: 26px;
   color: #FAF9F8;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 #headBanner .breadcrumb-info {
@@ -135,15 +135,16 @@
   margin-right: auto;
 }
 .card-title p {
-  font-size: 28px;
+  font-size: 40px;
   text-align: center;
   margin: 0;
 }
 
 .card-title span {
-  font-size: 20px;
+  font-size: 28px;
   text-align: center;
   display: block;
+  line-height: 36px;
   margin: 0;
 }
 
@@ -154,9 +155,16 @@
 .card .card-box {
   border: 1px solid #8a8a8a;
   background: #efeeeb;
-  padding: 66px 35px;
-  overflow: hidden;
   height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .card-box .image {
+  width: 100%;
+  position: absolute;
+  padding: 0 36px;
+  padding-top: 66px;
 }
 
 .card .card-box img {
@@ -166,10 +174,13 @@
 .card .card-box p {
   width: 100%;
   margin: 0;
-  margin-top: 77px;
+  margin-top: 98%;
   font-size: 36px;
   color: #08312A;
   text-align: center;
+  padding: 0 36px;
+  line-height: 36px;
+  padding-bottom: 66px;
 }
 
 .card-info .card-info-content {
