@@ -5,9 +5,14 @@
 }
 
 .navbar {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0;
   background: #08312A;
+  border-top: 2px solid #37584F;
+  border-bottom: 2px solid #37584F;
+}
+
+.navbar .navbar-nav {
+  gap: 40px;
 }
 
 .navbar-brand {
@@ -19,9 +24,39 @@
   max-width: 260px;
 }
 .nav-item .nav-link {
-  font-size: 22;
+  font-size: 22px;
   color: #FBFBFB;
+  padding: 0 !important;
 }
+
+.navbar .button-submit {
+  max-width: 36px;
+  padding: 0;
+  outline: none;
+}
+
+.navbar .button-submit img {
+  width: 100%;
+}
+
+.navbar input {
+  background: #00D073;
+  border: none;
+  outline: none;
+  color: #08312A;
+  padding: 7px 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navbar input::placeholder {
+  color: #08312A;
+}
+
+.navbar form {
+  gap: 42px;
+}
+
 
 .site-nav {
   width: 100%;
@@ -31,7 +66,7 @@
 
 .site-nav a {
   color: #FBFBFB;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -133,6 +168,7 @@
 .card-title {
   margin-left: auto;
   margin-right: auto;
+  flex: 1;
 }
 .card-title p {
   font-size: 40px;
@@ -149,24 +185,26 @@
 }
 
 .card {
+  width: 100%;
   height: 100%;
   border: none;
   border-radius: 0;
+  background: none;
+  justify-content: space-between;
+  gap: 0;
 }
 
 .card .card-box {
   border: 1px solid #8a8a8a;
   background: #efeeeb;
-  height: 100%;
   overflow: hidden;
+  width: 100%;
   position: relative;
+  flex: 2;
 }
 
 .card .card-box .image-float {
-  width: 100%;
-  position: absolute;
-  padding: 0 36px;
-  padding-top: 66px;
+  margin-bottom: -32px;
 }
 
 .card .card-box img {
@@ -176,13 +214,11 @@
 .card .card-box p {
   width: 100%;
   margin: 0;
-  margin-top: 98%;
+  margin-top: 71px;
   font-size: 36px;
   color: #08312A;
   text-align: center;
-  padding: 0 36px;
   line-height: 36px;
-  padding-bottom: 66px;
 }
 
 .card .card-box span {
@@ -226,6 +262,10 @@
 
 .card-info.card-bg-green .card-info-content .dot {
   background: #08312A;
+}
+
+#avc .card-box {
+  padding: 67px 35px;
 }
 
 #avc .card-info {
@@ -435,3 +475,88 @@
   font-weight: normal;
   line-height: 30px;
 }
+
+footer {
+  background: #142A25;
+  padding: 83px 0;
+  padding-bottom: 128px;
+}
+
+footer img {
+  width: 100%;
+  max-width: 186px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+footer span {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 53px;
+  line-height: 19px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  #headBanner .banner {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-size: cover;
+  }
+
+  #headBanner h1 {
+    font-size: 40px;
+  }
+
+  #avc h1 {
+    text-align: center;
+  }
+
+  .card .card-box, .card-title {
+    flex: none;
+  }
+
+  .card-info .card-info-content {
+    flex-direction: column;
+  }
+
+  .card-info .card-info-content .dot {
+    width: max-content;
+  }
+
+  .card-info .card-info-content p {
+    padding: 0;
+    padding-bottom: 48px;
+  }
+
+  #dpoc .content-3 {
+    background: linear-gradient(180deg, #FAF9F8 44.78%, #08312A 44.78%);
+  }
+  
+  #dpoc .content-3 .info-1 {
+      width: 100%;
+      padding-right: 0;
+  }
+
+  #dpoc .content-3 .card-info {
+    width: 100%;
+  }
+
+  #dpoc .content-3 .card-info .card-info-content {
+    flex-direction: column-reverse;
+  }
+
+  #dpoc .card-info-content p {
+    padding-top: 10px;
+    padding-left: 55px;
+    padding-bottom: 69px;
+    margin: 0;
+  }
+}
+
