@@ -27,6 +27,11 @@
   font-size: 22px;
   color: #FBFBFB;
   padding: 0 !important;
+  transition: filter .3s;
+}
+
+.nav-item .nav-link:hover {
+  filter: brightness(.8);
 }
 
 .navbar .button-submit {
@@ -44,9 +49,10 @@
   border: none;
   outline: none;
   color: #08312A;
-  padding: 7px 50px;
+  padding: 7px 30px;
   border-radius: 5px;
   text-align: center;
+  font-size: 22px;
 }
 
 .navbar input::placeholder {
@@ -68,6 +74,11 @@
   color: #FBFBFB;
   font-size: 18px;
   text-decoration: none;
+  transition: filter .3s;
+}
+
+.site-nav a:hover {
+  filter: brightness(.8);
 }
 
 #headBanner {
@@ -111,9 +122,6 @@
 
 #navigation {
   background: #faf9f8;
-}
-
-#navigation .container {
   padding: 94px 0;
 }
 
@@ -527,6 +535,11 @@ footer span {
 }
 
 @media screen and (max-width: 720px) {
+  .navbar-brand img {
+    width: 100%;
+    max-width: 160px;
+  }
+
   #headBanner .banner {
     padding-top: 70px;
     padding-bottom: 80px;
@@ -580,6 +593,10 @@ footer span {
     padding-left: 55px;
     padding-bottom: 69px;
     margin: 0;
+  }
+
+  #abracarAVida img {
+    max-width: 227px;
   }
 }
 
