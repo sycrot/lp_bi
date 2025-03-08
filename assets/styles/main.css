@@ -86,13 +86,15 @@
 #headBanner h1 {
   font-size: 50px;
   color: #ffffff;
+  line-height: 60px;
+  margin-bottom: 24px;
 }
 
 #headBanner p {
   font-size: 26px;
   color: #FAF9F8;
   margin: 0;
-  margin-top: 24px;
+  line-height: 36px;
 }
 
 #headBanner .breadcrumb-info {
@@ -104,6 +106,7 @@
 #headBanner .breadcrumb-info p {
   color: #0ae37b;
   font-size: 24px;
+  line-height: 32px;
 }
 
 #navigation {
@@ -111,10 +114,6 @@
 }
 
 #navigation .container {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 94px 0;
 }
 
@@ -127,19 +126,22 @@
   font-size: 45px;
   font-weight: normal;
   color: #08312a;
+  line-height: 40px;
 }
 
 .card-navigation {
   background: #fff;
   border: 1px solid #8a8a8a;
-  padding: 0 40px;
-  padding-top: 90px;
+  padding: 0 20px;
+  padding-top: 100px;
   padding-bottom: 50px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-navigation img {
-  width: 300px;
+  width: 200px;
   height: 200px;
   object-fit: contain;
 }
@@ -149,6 +151,7 @@
   color: #08312a;
   margin-top: 40px;
   text-align: center;
+  line-height: 40px;
 }
 
 .card-navigation a {
@@ -157,12 +160,18 @@
   max-width: max-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 26px;
+  padding: 15px 30px;
   color: #08312a;
   text-decoration: none;
   margin-top: 34px;
   background: #00d073;
   font-size: 28px;
+  line-height: 37px;
+  transition: filter .3s;
+}
+
+.card-navigation a:hover {
+  filter: brightness(.93);
 }
 
 .card-title {
@@ -174,6 +183,7 @@
   font-size: 40px;
   text-align: center;
   margin: 0;
+  line-height: 36px;
 }
 
 .card-title span {
@@ -278,6 +288,7 @@
 
 #avc .associations h1 {
   font-size: 45px;
+  line-height: 50px;
   color: #08312a;
   font-weight: normal;
   margin-bottom: 66px;
@@ -294,6 +305,7 @@
   font-size: 56px;
   line-height: 60px;
   font-weight: normal;
+  margin: 0;
 }
 
 #infarto .content-1 h5 {
@@ -452,10 +464,16 @@
   color: #08312A;
   font-size: 28px;
   line-height: 37px;
+  transition: filter .3s;
+}
+
+#abracarAVida a:hover {
+  filter: brightness(.93);
 }
 
 #referencias {
-  padding: 60px 0;
+  padding-top: 63px;
+  padding-bottom: 49px;
 }
 
 #referencias h3 {
@@ -489,14 +507,19 @@ footer img {
 
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: #FBFBFB;
   font-size: 22px;
   line-height: 30px;
 }
 
+footer a:hover {
+  color: #FBFBFB;
+  filter: brightness(.8);
+}
+
 footer span {
   font-size: 14px;
-  color: #fff;
+  color: #FBFBFB;
   margin-top: 53px;
   line-height: 19px;
   display: block;
