@@ -1,0 +1,11 @@
+#events {
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+#events h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  color: #08312A;
+  margin-bottom: 40px;
+}

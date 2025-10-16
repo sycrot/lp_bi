@@ -1,0 +1,163 @@
+.button-default,
+.button-primary {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 11px 31px;
+  font-size: 18px;
+  transition: filter 0.3s;
+  width: max-content;
+  text-decoration: none;
+}
+.button-default:hover,
+.button-primary:hover {
+  filter: brightness(0.97);
+}
+
+.button-default {
+  border: 2px solid #DDDDDD;
+  background: #F3F3F1;
+  color: #041E19;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-content img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.card-content span {
+  display: block;
+  background: #00D073;
+  color: #041E19;
+  width: max-content;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.card-content h4 {
+  color: #041E19;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card-content p {
+  font-size: 16px;
+  color: #041E19;
+  margin-bottom: 28px;
+}
+
+.slide-content {
+  position: relative;
+}
+.slide-content .card-content {
+  margin: 0 5.8px;
+}
+.slide-content .slick-arrow {
+  font-size: 0;
+  background: none;
+  border: none;
+  transition: filter 0.3s;
+}
+.slide-content .slick-arrow:hover {
+  filter: brightness(0.9);
+}
+.slide-content .slick-arrow::after {
+  content: "";
+  background-image: url("/assets/images/chevron-vertical.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-color: #00e47a3b;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.slide-content .slick-next {
+  position: absolute;
+  right: -70px;
+  top: 50%;
+}
+.slide-content .slick-next::after {
+  transform: rotate(180deg);
+}
+.slide-content .slick-prev {
+  position: absolute;
+  left: -70px;
+  top: 50%;
+  z-index: 99;
+}
+.slide-content .slick-dots {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.slide-content .slick-dots li button {
+  border: none;
+  background: #041E19;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  font-size: 0;
+}
+.slide-content .slick-dots li.slick-active button {
+  background: #00D073;
+}
+
+#featuredContent {
+  padding-top: 42px;
+  padding-bottom: 29px;
+  background: #F4F3F1;
+}
+
+.breadcrumb-info {
+  background: #041d19;
+  color: #0ae37b;
+  padding: 50px 0;
+  border-top: 2px solid #37584F;
+  border-bottom: 2px solid #37584F;
+}
+.breadcrumb-info p {
+  color: #0ae37b;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.hero-breadcrumb {
+  background: #08312A;
+  padding: 47px 0;
+}
+.hero-breadcrumb h3 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.card-event {
+  display: flex;
+  align-items: center;
+  padding: 28px;
+  gap: 30px;
+  background: #00D073;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #041E19;
+  transition: filter 0.3s;
+}
+.card-event:hover {
+  color: #041E19;
+  filter: brightness(0.96);
+}
+.card-event h1 {
+  font-size: 56px;
+  font-weight: 400;
+}
+.card-event span {
+  font-size: 18px;
+}
+.card-event img {
+  width: auto;
+  height: 134px;
+}

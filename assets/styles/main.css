@@ -23,6 +23,7 @@
   width: 100%;
   max-width: 260px;
 }
+
 .nav-item .nav-link {
   font-size: 22px;
   color: #FBFBFB;
@@ -81,9 +82,43 @@
   filter: brightness(.8);
 }
 
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  border: 0 !important;
+  width: 20px;
+  height: 12px;
+  background-image: url('../images/chevron-down.png');
+  background-size: cover;
+  background-position: center;
+  margin-left: 16px;
+}
+
+.dropdown-primary {
+  color: #01E37B !important;
+}
+
+.dropdown-primary::after {
+  background-image: url('../images/chevron-down-green.png');
+}
+
+
+.button-primary {
+  border: none;
+  padding: 6px 25px;
+  border-radius: 5px;
+  background-color: #00D073;
+  color: #08312A;
+}
+
 #headBanner {
   background: #002d25;
   color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #headBanner .banner {
@@ -112,6 +147,8 @@
   background: #041d19;
   color: #0ae37b;
   padding: 50px 0;
+  border-top: 2px solid #37584F;
+  border-bottom: 2px solid #37584F;
 }
 
 #headBanner .breadcrumb-info p {
@@ -187,6 +224,7 @@
   margin-right: auto;
   flex: 1;
 }
+
 .card-title p {
   font-size: 40px;
   text-align: center;
@@ -534,13 +572,19 @@ footer span {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1640px !important;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .navbar-brand img {
     width: 100%;
     max-width: 160px;
   }
 
-  #headBanner .banner {
+  #headBanner {
     padding-top: 70px;
     padding-bottom: 80px;
     background-size: cover;
@@ -554,7 +598,8 @@ footer span {
     text-align: center;
   }
 
-  .card .card-box, .card-title {
+  .card .card-box,
+  .card-title {
     flex: none;
   }
 
@@ -574,10 +619,10 @@ footer span {
   #dpoc .content-3 {
     background: linear-gradient(180deg, #FAF9F8 44.78%, #08312A 44.78%);
   }
-  
+
   #dpoc .content-3 .info-1 {
-      width: 100%;
-      padding-right: 0;
+    width: 100%;
+    padding-right: 0;
   }
 
   #dpoc .content-3 .card-info {
@@ -599,4 +644,3 @@ footer span {
     max-width: 227px;
   }
 }
-

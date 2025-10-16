@@ -1,0 +1,72 @@
+* {
+  color: #041D19;
+}
+
+.hero {
+  margin-top: 38px;
+  margin-bottom: 41px;
+}
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #08312A;
+}
+.hero span {
+  font-size: 24px;
+  font-weight: 400;
+  color: #08312A;
+}
+
+.form-login {
+  padding: 48px 64px;
+  width: 100%;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+}
+.form-login h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #041D19;
+}
+.form-login a {
+  font-size: 18px;
+  color: #08312A;
+}
+.form-login .input-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-login .input-form label {
+  font-size: 18px;
+  color: #041D19;
+}
+.form-login .input-form input {
+  border: 2px solid #DDDDDD;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px;
+  color: #041D19;
+}
+.form-login .input-form input.invalid {
+  outline: 2px solid #912F30;
+}
+
+.card-bordered-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 29px 25px;
+  width: 100%;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  height: 100%;
+}
+.card-bordered-flex img {
+  width: 94px;
+}
+.card-bordered-flex p {
+  text-align: center;
+  margin: 0;
+  margin-top: 26px;
+}
