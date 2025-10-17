@@ -9,7 +9,6 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
-
     <link rel="stylesheet" href="./assets/styles/dist/components.css" />
     <link rel="stylesheet" href="./assets/styles/dist/events.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
@@ -19,49 +18,121 @@
   <body>
     <div class="hero-breadcrumb">
       <div class="container">
-        <h3>Cursos & Eventos</h3>
+        <div class="d-flex align-items-center">
+          <h3>Cursos & Eventos</h3>
+          <p>AVC</p>
+        </div>
       </div>
     </div>
 
-    <section id="events">
+    <section id="content">
       <div class="container">
-        <h1>Explore nossa programação de cursos e eventos para aprimorar sua
-          prática clínica!​</h1>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <a href class="card-event">
-              <img src="./assets/images/icon-brain.png" alt="Cérebro" />
+        <div class="row flex-row-reverse flex-md-row">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <h1 class="m-0">Trilha de conhecimento- AVC- Organização da Rede
+            </h1>
+            <button class="button-primary">Próxima atividade</button>
+          </div>
+
+          <div class="col-12 col-md-8">
+            <div class="quiz-content">
+              <p>Com a habilitação, a unidade poderá registrar a AIH com o
+                código 03.03.04.030-0 (Tratamento do Acidente Vascular Cerebral
+                Isquêmico com o uso de trombolítico). Essa afirmação é:</p>
               <div>
-                <h2>AVC</h2>
-                <span>Acidente Vascular Cerebral</span>
+                <span>Total de questões: <b>1 de 4</b></span>
+                <div class="mt-2">
+                  <div class="quiz-answer">
+                    <input type="radio" id="answer1" name="question" />
+                    <label for="answer1">Verdadeira</label>
+                  </div>
+                  <div class="quiz-answer mt-3">
+                    <input type="radio" id="answer2" name="question" />
+                    <label for="answer2">Falsa</label>
+                  </div>
+                </div>
+                <div class="mt-3 d-flex justify-content-end">
+                  <button class="button-primary">Responder</button>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
           <div class="col-12 col-md-4">
-            <a href class="card-event">
-              <img src="./assets/images/icon-heart.png" alt="Coração" />
-              <div>
-                <h2>IAM</h2>
-                <span>Infarto Agudo do Miocárdio</span>
+            <div class="timeline ps-5">
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Suporte financeiro para centros de AVC habilitados - portaria
+                  nº6/2017
+                </div>
               </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-4">
-            <a href class="card-event">
-              <img src="./assets/images/icon-lung.png" alt="Pulmão" />
-              <div>
-                <h2>DPOC</h2>
-                <span>Doença Pulmonar Obstrutiva Crônica</span>
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
               </div>
-            </a>
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Habilitação Centros de AVC - Dra. Sheila Martins
+                </div>
+              </div>
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Triagem do paciente com AVC
+                </div>
+              </div>
+              <div class="timeline-item video current">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Qualificação para Habilitação de Centros de AVC - Portaria
+                  nº6/2017
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Certificado
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="featuredContent">
+    <section id="featuredContent" class="bg-white">
       <div class="container">
-        <h2>Conteúdos em destaque</h2>
+        <h2>Conteúdos relacionados</h2>
         <div class="slide-content">
           <a class="card-content video">
             <div class="image">

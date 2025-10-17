@@ -18,6 +18,24 @@ $red-color: #912F30;
   }
 }
 
+.button-primary {
+  font-size: 22px !important;
+
+  &:disabled {
+    background: #E4E4E4;
+    color: #909997;
+    cursor: default;
+
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
+.font-22 {
+  font-size: 22px !important;
+}
+
 .button-default {
   border: 2px solid #DDDDDD;
   background: #F3F3F1;
@@ -28,6 +46,9 @@ $red-color: #912F30;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
 
   img {
     width: 100%;
@@ -36,7 +57,7 @@ $red-color: #912F30;
 
   span {
     display: block;
-    background: $primary-color;
+    background: #00E47B;
     color: $dark-color;
     width: max-content;
     padding: 5px 10px;
@@ -53,6 +74,68 @@ $red-color: #912F30;
     font-size: 16px;
     color: $dark-color;
     margin-bottom: 28px;
+  }
+
+  &.border-bottom {
+    border-bottom: 1px solid #E0DFDB;
+    margin-bottom: 28px;
+  }
+
+  .image {
+    display: block;
+    position: relative;
+  }
+
+  &.video {
+    .image {
+      display: block;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 140px;
+        height: 140px;
+        display: block;
+        background: url('/assets/images/play-icon.png');
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &.tag-icon-video {
+    .image {
+      &::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        display: block;
+        background: url('/assets/images/tag-icon-play.png');
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  &.tag-icon-download {
+    .image {
+      &::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        display: block;
+        background: url('/assets/images/tag-icon-download.png');
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
   }
 }
 
@@ -90,7 +173,7 @@ $red-color: #912F30;
   .slick-next {
     position: absolute;
     right: -70px;
-    top: 50%;
+    top: 20%;
 
 
     &::after {
@@ -101,7 +184,7 @@ $red-color: #912F30;
   .slick-prev {
     position: absolute;
     left: -70px;
-    top: 50%;
+    top: 20%;
     z-index: 99;
   }
 
@@ -134,6 +217,13 @@ $red-color: #912F30;
   padding-top: 42px;
   padding-bottom: 29px;
   background: #F4F3F1;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #08312A;
+    margin-bottom: 52px;
+  }
 }
 
 .breadcrumb-info {
@@ -154,9 +244,33 @@ $red-color: #912F30;
   background: #08312A;
   padding: 47px 0;
 
+  a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: filter .3s;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+  }
+
   h3 {
     font-size: 32px;
     color: #fff;
+    margin: 0;
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+
+    &::before {
+      content: '|';
+      margin: 0 .3em;
+    }
   }
 }
 
@@ -176,7 +290,7 @@ $red-color: #912F30;
     filter: brightness(.96);
   }
 
-  h1 {
+  h2 {
     font-size: 56px;
     font-weight: 400;
   }
@@ -189,4 +303,187 @@ $red-color: #912F30;
     width: auto;
     height: 134px;
   }
+}
+
+.accordion {
+  .accordion-button {
+    background: $dark-color;
+    color: $primary-color;
+    font-size: 18px;
+
+    &::after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: url('/assets/images/arrow-left.png');
+      background-size: contain;
+      display: block;
+    }
+
+    &:not(.collapsed) {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+
+    &.no-icon {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .checkbox-filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+
+    input {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    label,
+    a {
+      font-size: 18px;
+      flex: 1;
+      cursor: pointer;
+      text-decoration: none;
+      color: #041D19;
+
+      &.disabled {
+        color: #b3bbba;
+      }
+
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.timeline {
+  .timeline-item {
+    cursor: pointer;
+    transition: filter .3s;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+
+    &::before {
+      content: '...........';
+      position: absolute;
+      transform: rotate(90deg);
+      top: 40px;
+      left: -2.5px;
+      font-size: 28px;
+      color: #707070;
+    }
+
+    .timeline-status {
+      width: 41px;
+      height: 41px;
+      border-radius: 50%;
+      background: #E0E0E0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 41px;
+    }
+
+    &.checked {
+      .timeline-status {
+        background-size: 40%;
+        background-color: #00D073;
+        border: 1px solid #707070;
+
+        &::after {
+          content: '';
+          background-image: url('/assets/images/check-icon.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 25px;
+          height: 18px;
+          display: block;
+        }
+      }
+    }
+
+    &.video {
+      .timeline-status {
+        background-size: 40%;
+        background-color: #08312A;
+        border: 1px solid #00D073;
+        padding-left: 4.5px;
+
+        &::after {
+          content: '';
+          background-image: url('/assets/images/play-icon-2.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 20.24px;
+          height: 22.34px;
+          display: block;
+        }
+      }
+    }
+
+    &.error {
+      .timeline-status {
+        background-size: 40%;
+        background-color: #9A1616;
+        border: 1px solid #410A0A;
+        padding-left: 2.5px;
+
+        &::after {
+          content: '';
+          background-image: url('/assets/images/error-icon.png');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 20.24px;
+          height: 22.34px;
+          display: block;
+        }
+      }
+    }
+
+    .timeline-text {
+      font-size: 20px;
+      color: $dark-color;
+    }
+
+    &.current {
+      .timeline-text {
+        font-weight: bold;
+      }
+    }
+  }
+
+
 }

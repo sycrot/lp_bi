@@ -9,51 +9,68 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
-
     <link rel="stylesheet" href="./assets/styles/dist/components.css" />
-    <link rel="stylesheet" href="./assets/styles/dist/events.css" />
+    <link rel="stylesheet"
+      href="./assets/styles/dist/conteudos-complementares.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <link rel="stylesheet" type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   </head>
   <body>
+
     <div class="hero-breadcrumb">
       <div class="container">
-        <h3>Cursos & Eventos</h3>
+        <div class="d-flex align-items-center">
+          <h3>Conteúdos Complementares</h3>
+          <p>AVC</p>
+        </div>
       </div>
     </div>
 
-    <section id="events">
+    <section id="dadosPessoais">
       <div class="container">
-        <h1>Explore nossa programação de cursos e eventos para aprimorar sua
-          prática clínica!​</h1>
         <div class="row">
-          <div class="col-12 col-md-4">
-            <a href class="card-event">
-              <img src="./assets/images/icon-brain.png" alt="Cérebro" />
-              <div>
-                <h2>AVC</h2>
-                <span>Acidente Vascular Cerebral</span>
+          <div class="col-12 col-md-3">
+            <div class="accordion" id="accordionNavigation">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button no-icon">
+                    Menu
+                  </button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="collapseOne"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionNavigation">
+                  <div class="accordion-body">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="checkbox-filter">
+                        <a href>Dados pessoais</a>
+                      </div>
+                      <div class="checkbox-filter">
+                        <a href class="disabled">Meus cursos</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-12 col-md-4">
-            <a href class="card-event">
-              <img src="./assets/images/icon-heart.png" alt="Coração" />
-              <div>
-                <h2>IAM</h2>
-                <span>Infarto Agudo do Miocárdio</span>
+
+          <div class="col-12 col-md-9">
+            <div class="header">
+              <h1>Você ainda não possui cursos concluídos.</h1>
+              <p>Explore os conteúdos <a href>disponíveis aqui</a> para obter
+                seu primeiro certificado!</p>
+            </div>
+            <div class="mt-4 card-key">
+              <h3>Recebeu um código?</h3>
+              <p>Digite o código recebido para gerar o certificado</p>
+              <div class="d-flex gap-4">
+                <input type="text" id="key" />
+                <button class="button-primary fw-bold">Baixar
+                  Certificado</button>
               </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-4">
-            <a href class="card-event">
-              <img src="./assets/images/icon-lung.png" alt="Pulmão" />
-              <div>
-                <h2>DPOC</h2>
-                <span>Doença Pulmonar Obstrutiva Crônica</span>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
