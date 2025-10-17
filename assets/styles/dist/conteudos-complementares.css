@@ -48,3 +48,37 @@
   font-size: 18px;
   vertical-align: middle;
 }
+#dadosPessoais form label {
+  font-size: 18px;
+  color: #8A8A8A;
+  margin-bottom: 10px;
+}
+#dadosPessoais form input {
+  font-size: 18px;
+  padding: 12px;
+  border: 2px solid #8A8A8A;
+  margin-bottom: 28px;
+  background: #fff;
+}
+#dadosPessoais form .banner-info {
+  padding: 40px 43px;
+  font-size: 24px;
+  color: #076D7E;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #D2F2F7;
+  margin: 43px 0;
+}
+#dadosPessoais form span {
+  font-size: 18px;
+}
+#dadosPessoais form button {
+  background: #00D073;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 58px;
+  margin-top: 65px;
+  font-size: 27px;
+  font-weight: bold;
+}

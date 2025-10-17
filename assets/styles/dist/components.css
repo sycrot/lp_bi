@@ -302,6 +302,9 @@
 .accordion .checkbox-filter a.active {
   font-weight: bold;
 }
+.accordion .accordion-item {
+  border: none;
+}
 
 .timeline .timeline-item {
   cursor: pointer;
