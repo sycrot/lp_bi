@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/* cursos e eventos / conteúdos complementares */
+* {
+  color: #041D19;
+}
+
 #events {
   padding-top: 35px;
   padding-bottom: 50px;
@@ -27,6 +33,11 @@
   display: flex;
   gap: 26px;
   margin-top: 42px;
+}
+@media screen and (max-width: 780px) {
+  #content .video-content .video-info {
+    flex-direction: column;
+  }
 }
 #content .video-content .video-info .info-content {
   display: flex;
@@ -99,6 +110,7 @@
 #content .satisfaction-survey .question .question-level {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #content .satisfaction-survey .question .question-level .level-item {
   position: relative;

@@ -1,3 +1,9 @@
+/* cursos e eventos / conteúdos complementares */
+
+* {
+  color: #041D19;
+}
+
 #events {
   padding-top: 35px;
   padding-bottom: 50px;
@@ -30,6 +36,10 @@
       display: flex;
       gap: 26px;
       margin-top: 42px;
+
+      @media screen and (max-width: 780px) {
+        flex-direction: column;
+      }
 
       .info-content {
         display: flex;
@@ -120,6 +130,7 @@
       .question-level {
         display: flex;
         gap: 20px;
+        flex-wrap: wrap;
 
         .level-item {
           position: relative;

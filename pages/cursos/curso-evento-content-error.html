@@ -9,66 +9,104 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/dist/components.css" />
-    <link rel="stylesheet"
-      href="./assets/styles/dist/conteudos-complementares.css" />
-    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="../../assets/styles/dist/components.css" />
+    <link rel="stylesheet" href="../../assets/styles/dist/events.css" />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
     <link rel="stylesheet" type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   </head>
   <body>
-
     <div class="hero-breadcrumb">
       <div class="container">
         <div class="d-flex align-items-center">
-          <h3>Conteúdos Complementares</h3>
+          <h3>Cursos & Eventos</h3>
           <p>AVC</p>
         </div>
       </div>
     </div>
 
-    <section id="dadosPessoais">
+    <section id="content">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-3 pe-5">
-            <div class="accordion" id="accordionNavigation">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button no-icon">
-                    Menu
-                  </button>
-                </h2>
-                <div class="accordion-collapse collapse show" id="collapseOne"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionNavigation">
-                  <div class="accordion-body">
-                    <div class="d-flex flex-column gap-3">
-                      <div class="checkbox-filter">
-                        <a href>Dados pessoais</a>
-                      </div>
-                      <div class="checkbox-filter">
-                        <a href class="disabled">Meus cursos</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h1 class="m-0">Trilha de conhecimento- AVC- Organização da Rede
+          </h1>
+        </div>
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-12 col-md-8">
+            <div class="quiz-content">
+              <p><b>Não desista!<br />
+                  A sua pontuação não foi suficiente para concluir o
+                  curso.<br />
+                  Que tal revisar o conteúdo e tentar novamente?</b></p>
+              <button class="button-primary mt-5">Tentar novamente</button>
             </div>
           </div>
-
-          <div class="col-12 col-md-9">
-            <div class="header">
-              <h1>Você ainda não possui cursos concluídos.</h1>
-              <p>Explore os conteúdos <a href>disponíveis aqui</a> para obter
-                seu primeiro certificado!</p>
-            </div>
-            <div class="mt-4 card-key">
-              <h3>Recebeu um código?</h3>
-              <p>Digite o código recebido para gerar o certificado</p>
-              <div class="d-flex gap-4">
-                <input type="text" id="key" />
-                <button class="button-primary fw-bold">Baixar
-                  Certificado</button>
+          <div class="col-12 col-md-4">
+            <div class="timeline">
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Suporte financeiro para centros de AVC habilitados - portaria
+                  nº6/2017
+                </div>
+              </div>
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item checked">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Habilitação Centros de AVC - Dra. Sheila Martins
+                </div>
+              </div>
+              <div class="timeline-item error current">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Triagem do paciente com AVC
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Qualificação para Habilitação de Centros de AVC - Portaria
+                  nº6/2017
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Quiz
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-status">
+                </div>
+                <div class="timeline-text">
+                  Certificado
+                </div>
               </div>
             </div>
           </div>
@@ -76,13 +114,13 @@
       </div>
     </section>
 
-    <section id="featuredContent">
+    <section id="featuredContent" class="bg-white">
       <div class="container">
-        <h2>Conteúdos em destaque</h2>
+        <h2>Conteúdos relacionados</h2>
         <div class="slide-content">
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -92,7 +130,7 @@
           </a>
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -102,7 +140,7 @@
           </a>
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -112,7 +150,7 @@
           </a>
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -122,7 +160,7 @@
           </a>
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -132,7 +170,7 @@
           </a>
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -142,7 +180,7 @@
           </a>
           <a class="card-content video">
             <div class="image">
-              <img src="./assets/images/content-1.png"
+              <img src="../../assets/images/content-1.png"
                 alt="Educação Continuada" />
             </div>
             <span>AVC</span>
@@ -170,6 +208,15 @@ $('.slide-content').slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
 });
       </script>
   </body>

@@ -1,4 +1,8 @@
 /* dados pessoais */
+* {
+  color: #041D19;
+}
+
 #dadosPessoais {
   padding-top: 95px;
   padding-bottom: 66px;

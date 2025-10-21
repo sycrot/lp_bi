@@ -1,6 +1,12 @@
+/* all components */
+
 $dark-color: #041E19;
 $primary-color: #00D073;
 $red-color: #912F30;
+
+* {
+  color: #041D19;
+}
 
 .button-default,
 .button-primary {
@@ -12,6 +18,12 @@ $red-color: #912F30;
   transition: filter .3s;
   width: max-content;
   text-decoration: none;
+  word-break: break-all;
+
+  @media screen and (max-width: 780px) {
+    font-size: 16px;
+    padding: 11px 20px;
+  }
 
   &:hover {
     filter: brightness(.97);
@@ -77,6 +89,7 @@ $red-color: #912F30;
   }
 
   &.border-bottom {
+    height: -webkit-fill-available;
     border-bottom: 1px solid #E0DFDB;
     margin-bottom: 28px;
   }
@@ -175,6 +188,9 @@ $red-color: #912F30;
     right: -70px;
     top: 20%;
 
+    @media screen and (max-width: 780px) {
+      right: 0;
+    }
 
     &::after {
       transform: rotate(180deg);
@@ -186,6 +202,10 @@ $red-color: #912F30;
     left: -70px;
     top: 20%;
     z-index: 99;
+
+    @media screen and (max-width: 780px) {
+      left: 0;
+    }
   }
 
   .slick-dots {
@@ -272,6 +292,14 @@ $red-color: #912F30;
       margin: 0 .3em;
     }
   }
+
+  @media screen and (max-width: 780px) {
+
+    h3,
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
 .card-event {
@@ -306,6 +334,13 @@ $red-color: #912F30;
 }
 
 .accordion {
+  margin-bottom: 2em;
+
+  @media screen and (min-width: 780px) {
+    padding-right: 4rem;
+    margin-bottom: 0;
+  }
+
   .accordion-button {
     background: $dark-color;
     color: $primary-color;
@@ -338,6 +373,7 @@ $red-color: #912F30;
     justify-content: space-between;
     gap: 10px;
     cursor: pointer;
+    align-items: center;
 
     &:hover {
       filter: brightness(.9);
@@ -356,6 +392,9 @@ $red-color: #912F30;
       cursor: pointer;
       text-decoration: none;
       color: #041D19;
+      height: 60px;
+      display: flex;
+      align-items: center;
 
       &.disabled {
         color: #b3bbba;
@@ -373,6 +412,13 @@ $red-color: #912F30;
 }
 
 .timeline {
+  margin-bottom: 2em;
+
+  @media screen and (min-width: 780px) {
+    padding-left: 4rem;
+    margin: 0;
+  }
+
   .timeline-item {
     cursor: pointer;
     transition: filter .3s;
@@ -398,11 +444,17 @@ $red-color: #912F30;
     margin-top: 20px;
 
     &::before {
-      content: '...........';
+      content: '';
       position: absolute;
-      transform: rotate(90deg);
-      top: 40px;
-      left: -2.5px;
+      width: 3px;
+      height: 160%;
+      background: repeating-linear-gradient(to bottom,
+          #707070 0,
+          #707070 3px,
+          #fff 2px,
+          #fff 7px);
+      top: 50%;
+      left: 18.5px;
       font-size: 28px;
       color: #707070;
     }
@@ -437,6 +489,10 @@ $red-color: #912F30;
           display: block;
         }
       }
+
+      .timeline-text {
+        color: $dark-color;
+      }
     }
 
     &.video {
@@ -455,6 +511,10 @@ $red-color: #912F30;
           height: 22.34px;
           display: block;
         }
+      }
+
+      .timeline-text {
+        color: $dark-color;
       }
     }
 
@@ -475,11 +535,15 @@ $red-color: #912F30;
           display: block;
         }
       }
+
+      .timeline-text {
+        color: $dark-color;
+      }
     }
 
     .timeline-text {
       font-size: 20px;
-      color: $dark-color;
+      color: #949d9b;
     }
 
     &.current {

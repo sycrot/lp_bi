@@ -101,6 +101,10 @@
   color: #01E37B !important;
 }
 
+.dropdown-primary b {
+  color: #01E37B !important;
+}
+
 .dropdown-primary::after {
   background-image: url('../images/chevron-down-green.png');
 }
