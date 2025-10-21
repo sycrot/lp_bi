@@ -21,11 +21,11 @@
 
 .navbar-brand img {
   width: 100%;
-  max-width: 260px;
+  max-width: 170px;
 }
 
 .nav-item .nav-link {
-  font-size: 22px;
+  font-size: 18px;
   color: #FBFBFB;
   padding: 0 !important;
   transition: filter .3s;
@@ -122,6 +122,7 @@
   background: #002d25;
   color: #ffffff;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -578,7 +579,7 @@ footer span {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1640px !important;
+    /* max-width: 1640px !important; */
   }
 }
 

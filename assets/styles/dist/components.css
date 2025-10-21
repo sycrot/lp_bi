@@ -3,13 +3,23 @@
   color: #041D19;
 }
 
+@media screen and (min-width: 1200px) {
+  .w-xl-max-content {
+    width: max-content !important;
+  }
+}
+
+.navigation .nav-item .nav-link {
+  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
+}
+
 .button-default,
 .button-primary {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 11px 31px;
-  font-size: 18px;
+  padding: 11px;
+  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
   transition: filter 0.3s;
   width: max-content;
   text-decoration: none;
@@ -18,7 +28,6 @@
 @media screen and (max-width: 780px) {
   .button-default,
 .button-primary {
-    font-size: 16px;
     padding: 11px 20px;
   }
 }
@@ -27,9 +36,6 @@
   filter: brightness(0.97);
 }
 
-.button-primary {
-  font-size: 22px !important;
-}
 .button-primary:disabled {
   background: #E4E4E4;
   color: #909997;
@@ -40,7 +46,7 @@
 }
 
 .font-22 {
-  font-size: 22px !important;
+  font-size: clamp(14px, calc(11.0909090909px + 0.9090909091vw), 22px);
 }
 
 .button-default {
@@ -56,6 +62,7 @@
   position: relative;
   text-decoration: none;
   cursor: pointer;
+  height: 100%;
 }
 .card-content img {
   width: 100%;
@@ -67,17 +74,20 @@
   color: #041E19;
   width: max-content;
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: clamp(12px, calc(10.5454545455px + 0.4545454545vw), 16px);
 }
 .card-content h4 {
   color: #041E19;
-  font-size: 24px;
+  font-size: clamp(16px, calc(13.0909090909px + 0.9090909091vw), 24px);
   font-weight: 400;
 }
 .card-content p {
-  font-size: 16px;
+  font-size: clamp(12px, calc(10.5454545455px + 0.4545454545vw), 16px);
   color: #041E19;
   margin-bottom: 28px;
+}
+.card-content a {
+  margin-top: auto;
 }
 .card-content.border-bottom {
   height: -webkit-fill-available;
@@ -202,7 +212,7 @@
   background: #F4F3F1;
 }
 #featuredContent h2 {
-  font-size: 32px;
+  font-size: clamp(20px, calc(15.6363636364px + 1.3636363636vw), 32px);
   font-weight: 500;
   color: #08312A;
   margin-bottom: 52px;
@@ -217,7 +227,7 @@
 }
 .breadcrumb-info p {
   color: #0ae37b;
-  font-size: 24px;
+  font-size: clamp(16px, calc(13.0909090909px + 0.9090909091vw), 24px);
   line-height: 32px;
 }
 
@@ -227,7 +237,7 @@
 }
 .hero-breadcrumb a {
   color: #fff;
-  font-size: 18px;
+  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
   text-decoration: none;
   transition: filter 0.3s;
 }
@@ -235,13 +245,13 @@
   filter: brightness(0.9);
 }
 .hero-breadcrumb h3 {
-  font-size: 32px;
+  font-size: clamp(20px, calc(15.6363636364px + 1.3636363636vw), 32px);
   color: #fff;
   margin: 0;
 }
 .hero-breadcrumb p {
   color: #00D073;
-  font-size: 32px;
+  font-size: clamp(20px, calc(15.6363636364px + 1.3636363636vw), 32px);
   font-weight: 500;
   margin: 0;
 }
@@ -272,11 +282,11 @@
   filter: brightness(0.96);
 }
 .card-event h2 {
-  font-size: 56px;
+  font-size: clamp(28px, calc(17.8181818182px + 3.1818181818vw), 56px);
   font-weight: 400;
 }
 .card-event span {
-  font-size: 18px;
+  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
 }
 .card-event img {
   width: auto;
@@ -286,7 +296,7 @@
 .accordion {
   margin-bottom: 2em;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1200px) {
   .accordion {
     padding-right: 4rem;
     margin-bottom: 0;
@@ -295,7 +305,7 @@
 .accordion .accordion-button {
   background: #041E19;
   color: #00D073;
-  font-size: 18px;
+  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
 }
 .accordion .accordion-button::after {
   content: "";
@@ -328,7 +338,7 @@
 }
 .accordion .checkbox-filter label,
 .accordion .checkbox-filter a {
-  font-size: 18px;
+  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
   flex: 1;
   cursor: pointer;
   text-decoration: none;
@@ -351,6 +361,7 @@
 
 .timeline {
   margin-bottom: 2em;
+  overflow: hidden;
 }
 @media screen and (min-width: 780px) {
   .timeline {
@@ -380,7 +391,7 @@
   content: "";
   position: absolute;
   width: 3px;
-  height: 160%;
+  height: 180%;
   background: repeating-linear-gradient(to bottom, #707070 0, #707070 3px, #fff 2px, #fff 7px);
   top: 50%;
   left: 18.5px;
