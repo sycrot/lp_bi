@@ -5,7 +5,7 @@
 }
 
 .navbar {
-  padding: 50px 0;
+  padding: 27px 0;
   background: #08312A;
   border-top: 2px solid #37584F;
   border-bottom: 2px solid #37584F;
@@ -21,7 +21,7 @@
 
 .navbar-brand img {
   width: 100%;
-  max-width: 170px;
+  max-width: 156px;
 }
 
 .nav-item .nav-link {
@@ -73,7 +73,7 @@
 
 .site-nav a {
   color: #FBFBFB;
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
   transition: filter .3s;
 }
@@ -122,30 +122,31 @@
   background: #002d25;
   color: #ffffff;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 #headBanner .banner {
-  padding-top: 159px;
-  padding-bottom: 163px;
+  padding-top: 40px;
+  padding-bottom: 82px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: contain;
 }
 
 #headBanner h1 {
-  font-size: 50px;
+  font-size: 28px;
   color: #ffffff;
-  line-height: 60px;
+  line-height: 37px;
   margin-bottom: 24px;
+  font-weight: bold;
 }
 
 #headBanner p {
-  font-size: 26px;
+  font-size: 20px;
   color: #FAF9F8;
   margin: 0;
-  line-height: 36px;
+  line-height: 27px;
 }
 
 #headBanner .breadcrumb-info {
@@ -172,11 +173,11 @@
 }
 
 #avc h1 {
-  margin-bottom: 64px;
-  font-size: 45px;
-  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
   color: #08312a;
-  line-height: 40px;
+  line-height: 37px;
 }
 
 .card-navigation {
@@ -228,20 +229,22 @@
   margin-left: auto;
   margin-right: auto;
   flex: 1;
+  margin-bottom: 15px;
+  padding: 0 28px;
 }
 
 .card-title p {
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
   margin: 0;
-  line-height: 36px;
+  line-height: 29px;
 }
 
 .card-title span {
-  font-size: 28px;
+  font-size: 18px;
   text-align: center;
   display: block;
-  line-height: 36px;
+  line-height: 29px;
   margin: 0;
 }
 
@@ -253,11 +256,12 @@
   background: none;
   justify-content: space-between;
   gap: 0;
+  background: #efeeeb;
+  border: 1px solid #8a8a8a;
+  padding-top: 13px;
 }
 
 .card .card-box {
-  border: 1px solid #8a8a8a;
-  background: #efeeeb;
   overflow: hidden;
   width: 100%;
   position: relative;
@@ -275,20 +279,20 @@
 .card .card-box p {
   width: 100%;
   margin: 0;
-  margin-top: 71px;
-  font-size: 36px;
+  margin-top: 48px;
+  font-size: 18px;
   color: #08312A;
   text-align: center;
-  line-height: 36px;
+  line-height: 29px;
 }
 
 .card .card-box span {
   display: block;
   text-align: center;
-  font-size: 26px;
+  font-size: 18px;
   color: #08312A;
-  line-height: 36px;
-  margin-top: 36px;
+  line-height: 28px;
+  margin-top: 19px;
 }
 
 .card-info .card-info-content {
@@ -302,11 +306,16 @@
 }
 
 .card-info .card-info-content p {
-  padding: 48px 0;
+  padding: 40px 0;
   color: #faf9f8;
-  font-size: 36px;
+  font-size: 22px;
   text-align: center;
-  line-height: 45px;
+  line-height: 32px;
+  max-width: 1094px;
+}
+
+.card-info .card-info-content b {
+  color: #faf9f8;
 }
 
 .card-info.card-bg-dark-green {
@@ -326,24 +335,26 @@
 }
 
 #avc .card-box {
-  padding: 67px 35px;
+  padding: 28px;
+  padding-top: 0;
 }
 
 #avc .card-info {
-  margin-top: 103px;
+  margin-top: 40px;
 }
 
 #avc .associations {
-  padding: 90px 0;
+  padding: 34px 0;
+  padding-bottom: 80px;
 }
 
 #avc .associations h1 {
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 28px;
+  line-height: 37px;
   color: #08312a;
-  font-weight: normal;
-  margin-bottom: 66px;
-  max-width: 878px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 #infarto {
@@ -353,18 +364,20 @@
 
 #infarto .content-1 h1 {
   color: #00D073;
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 49px;
   font-weight: normal;
   margin: 0;
+  text-align: center;
 }
 
 #infarto .content-1 h5 {
   color: #fff;
-  font-size: 36px;
-  line-height: 60px;
+  font-size: 22px;
+  line-height: 30px;
   font-weight: normal;
-  margin-bottom: 88px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 #infarto .content-1 img {
@@ -372,16 +385,16 @@
 }
 
 #infarto .content-1 p {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 30px;
   color: #FFFFFF;
   text-align: center;
   margin: 0;
-  margin-top: 43px;
+  margin-top: 19px;
 }
 
 #infarto .card-info {
-  margin-top: 104px;
+  margin-top: 51px;
 }
 
 #dpoc {
@@ -389,26 +402,24 @@
 }
 
 #dpoc h1 {
-  font-size: 45px;
+  font-size: 28px;
   color: #08312A;
-  font-weight: normal;
-  line-height: 60px;
+  font-weight: bold;
+  line-height: 37px;
+  text-align: center;
 }
 
 #dpoc h5 {
-  font-size: 40px;
+  font-size: 22px;
   color: #08312A;
   font-weight: normal;
-  line-height: 60px;
-  text-decoration: underline;
-  text-decoration-color: #00D073;
-  margin-bottom: 90px;
+  line-height: 30px;
+  margin-bottom: 41px;
+  text-align: center;
 }
 
 #dpoc .card .card-box {
-  padding: 0 35px;
-  padding-top: 55px;
-  padding-bottom: 31px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -418,52 +429,57 @@
   display: flex;
   align-items: center;
   height: 100%;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 #dpoc .content-2 {
-  margin-top: 87px;
+  margin-top: 40px;
 }
 
 #dpoc .content-2 h1 {
-  margin-bottom: 83px;
+  margin-bottom: 44px;
+  font-size: 28px;
+  line-height: 37px;
 }
 
 #dpoc .content-2 .card-cause {
-  width: 100%;
-  height: 298px;
+  width: 180px;
+  height: 180px;
   background: #d9f8ea;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 #dpoc .content-2 .card-cause img {
   width: 100%;
-  max-width: 121px;
+  max-width: 116px;
 }
 
 #dpoc .content-2 span {
-  margin-top: 13px;
+  margin-top: 10px;
   display: block;
   text-align: center;
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 24px;
   color: #08312A;
 }
 
 #dpoc .content-3 {
-  margin-top: 115px;
+  margin-top: 41px;
   background: linear-gradient(90deg, #FAF9F8 50%, #08312A 50%);
 }
 
 
 #dpoc .content-3 .info-1 {
   background: #FAF9F8;
-  padding: 121px 0;
-  padding-right: 27px;
-  font-size: 36px;
-  line-height: 45px;
+  padding: 40px 0;
+  font-size: 22px;
+  line-height: 32px;
+  padding-right: 127px;
   color: #191919;
   width: 50%;
 }
@@ -473,16 +489,14 @@
 }
 
 #dpoc .card-info-content p {
-  padding-top: 121px;
+  padding-top: 40px;
   padding-left: 55px;
-  padding-bottom: 69px;
   margin: 0;
 }
 
 #abracarAVida {
   background: #E5E3DE;
-  padding-top: 75px;
-  padding-bottom: 50px;
+  padding: 40px 0;
 }
 
 #abracarAVida .content {
@@ -493,29 +507,16 @@
 
 #abracarAVida img {
   width: 100%;
-  max-width: 427px;
-  margin-bottom: 27px;
+  max-width: 284px;
+  margin-bottom: 40px;
 }
 
 #abracarAVida p {
-  margin-bottom: 74px;
-  font-size: 36px;
-  line-height: 45px;
+  margin-bottom: 42px;
+  font-size: 22px;
+  line-height: 32px;
   color: #191919;
   text-align: center;
-}
-
-#abracarAVida a {
-  text-decoration: none;
-  display: block;
-  position: relative;
-  width: max-content;
-  padding: 15px 54px;
-  background: #00D073;
-  color: #08312A;
-  font-size: 28px;
-  line-height: 37px;
-  transition: filter .3s;
 }
 
 #abracarAVida a:hover {
@@ -523,14 +524,14 @@
 }
 
 #referencias {
-  padding-top: 63px;
-  padding-bottom: 49px;
+  padding-top: 42px;
+  padding-bottom: 70px;
 }
 
 #referencias h3 {
   text-align: center;
   color: #191919;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 30px;
   margin-bottom: 45px;
@@ -540,27 +541,26 @@
   display: block;
   text-align: center;
   color: #191919;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   line-height: 30px;
 }
 
 footer {
   background: #142A25;
-  padding: 83px 0;
-  padding-bottom: 128px;
+  padding: 80px 0;
 }
 
 footer img {
   width: 100%;
-  max-width: 186px;
+  max-width: 139px;
 }
 
 footer a {
   text-decoration: none;
   color: #FBFBFB;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 footer a:hover {
@@ -569,39 +569,15 @@ footer a:hover {
 }
 
 footer span {
-  font-size: 14px;
+  font-size: 12px;
   color: #FBFBFB;
-  margin-top: 53px;
-  line-height: 19px;
+  margin-top: 57px;
+  line-height: 16px;
   display: block;
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    /* max-width: 1640px !important; */
-  }
-}
-
 @media screen and (max-width: 720px) {
-  .navbar-brand img {
-    width: 100%;
-    max-width: 160px;
-  }
-
-  #headBanner {
-    padding-top: 70px;
-    padding-bottom: 80px;
-    background-size: cover;
-  }
-
-  #headBanner h1 {
-    font-size: 40px;
-  }
-
-  #avc h1 {
-    text-align: center;
-  }
 
   .card .card-box,
   .card-title {
@@ -622,7 +598,7 @@ footer span {
   }
 
   #dpoc .content-3 {
-    background: linear-gradient(180deg, #FAF9F8 44.78%, #08312A 44.78%);
+    background: linear-gradient(180deg, #FAF9F8 36.3%, #08312A 36.3%);
   }
 
   #dpoc .content-3 .info-1 {

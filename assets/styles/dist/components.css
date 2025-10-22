@@ -1,6 +1,7 @@
 /* all components */
 * {
   color: #041D19;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 1200px) {
@@ -14,12 +15,13 @@
 }
 
 .button-default,
-.button-primary {
+.button-primary,
+.button-dark {
   border: none;
   border-radius: 5px;
   cursor: pointer;
   padding: 11px;
-  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
+  font-size: 14px;
   transition: filter 0.3s;
   width: max-content;
   text-decoration: none;
@@ -27,13 +29,20 @@
 }
 @media screen and (max-width: 780px) {
   .button-default,
-.button-primary {
+.button-primary,
+.button-dark {
     padding: 11px 20px;
   }
 }
 .button-default:hover,
-.button-primary:hover {
+.button-primary:hover,
+.button-dark:hover {
   filter: brightness(0.97);
+}
+
+.button-dark {
+  background: #08312A;
+  color: #00D073;
 }
 
 .button-primary:disabled {
@@ -66,7 +75,6 @@
 }
 .card-content img {
   width: 100%;
-  margin-bottom: 10px;
 }
 .card-content span {
   display: block;
@@ -74,17 +82,21 @@
   color: #041E19;
   width: max-content;
   padding: 5px 10px;
-  font-size: clamp(12px, calc(10.5454545455px + 0.4545454545vw), 16px);
+  font-size: clamp(12px, calc(11.2727272727px + 0.2272727273vw), 14px);
+  line-height: 19px;
 }
 .card-content h4 {
   color: #041E19;
-  font-size: clamp(16px, calc(13.0909090909px + 0.9090909091vw), 24px);
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  margin: 0;
 }
 .card-content p {
-  font-size: clamp(12px, calc(10.5454545455px + 0.4545454545vw), 16px);
+  font-size: 12px;
+  line-height: 16px;
   color: #041E19;
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 .card-content a {
   margin-top: auto;
@@ -212,28 +224,29 @@
   background: #F4F3F1;
 }
 #featuredContent h2 {
-  font-size: clamp(20px, calc(15.6363636364px + 1.3636363636vw), 32px);
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: bold;
   color: #08312A;
-  margin-bottom: 52px;
+  margin-bottom: 41px;
+  line-height: 32px;
 }
 
 .breadcrumb-info {
   background: #041d19;
   color: #0ae37b;
-  padding: 50px 0;
+  padding: 30px 0;
   border-top: 2px solid #37584F;
   border-bottom: 2px solid #37584F;
 }
 .breadcrumb-info p {
   color: #0ae37b;
-  font-size: clamp(16px, calc(13.0909090909px + 0.9090909091vw), 24px);
-  line-height: 32px;
+  font-size: clamp(16px, calc(15.2727272727px + 0.2272727273vw), 18px);
+  font-weight: bold;
 }
 
 .hero-breadcrumb {
   background: #08312A;
-  padding: 47px 0;
+  padding: 25px 0;
 }
 .hero-breadcrumb a {
   color: #fff;
@@ -245,13 +258,15 @@
   filter: brightness(0.9);
 }
 .hero-breadcrumb h3 {
-  font-size: clamp(20px, calc(15.6363636364px + 1.3636363636vw), 32px);
+  font-size: 22px;
+  line-height: 30px;
   color: #fff;
   margin: 0;
 }
 .hero-breadcrumb p {
   color: #00D073;
-  font-size: clamp(20px, calc(15.6363636364px + 1.3636363636vw), 32px);
+  font-size: 22px;
+  line-height: 30px;
   font-weight: 500;
   margin: 0;
 }
@@ -269,28 +284,35 @@
 .card-event {
   display: flex;
   align-items: center;
-  padding: 28px;
-  gap: 30px;
+  padding: 23px 20px;
+  gap: 20px;
   background: #00D073;
   border-radius: 5px;
   text-decoration: none;
   color: #041E19;
   transition: filter 0.3s;
+  border: 1px solid #8A8A8A;
+  height: 100%;
 }
 .card-event:hover {
   color: #041E19;
   filter: brightness(0.96);
 }
 .card-event h2 {
-  font-size: clamp(28px, calc(17.8181818182px + 3.1818181818vw), 56px);
-  font-weight: 400;
+  font-size: clamp(28px, calc(22.9090909091px + 1.5909090909vw), 42px);
+  font-weight: bold;
+  line-height: 22px;
 }
 .card-event span {
   font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
+  line-height: 22px;
 }
 .card-event img {
-  width: auto;
-  height: 134px;
+  width: 100%;
+  max-width: 130px;
+  height: 100%;
+  max-height: 134px;
+  object-fit: contain;
 }
 
 .accordion {
@@ -298,14 +320,14 @@
 }
 @media screen and (min-width: 1200px) {
   .accordion {
-    padding-right: 4rem;
+    padding-right: 1rem;
     margin-bottom: 0;
   }
 }
 .accordion .accordion-button {
   background: #041E19;
   color: #00D073;
-  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
+  font-size: 18px;
 }
 .accordion .accordion-button::after {
   content: "";
@@ -338,7 +360,8 @@
 }
 .accordion .checkbox-filter label,
 .accordion .checkbox-filter a {
-  font-size: clamp(14px, calc(12.5454545455px + 0.4545454545vw), 18px);
+  font-size: 16px;
+  line-height: 21px;
   flex: 1;
   cursor: pointer;
   text-decoration: none;
@@ -373,7 +396,7 @@
   cursor: pointer;
   transition: filter 0.3s;
   display: flex;
-  gap: 26px;
+  gap: 20px;
   align-items: center;
   position: relative;
   margin-top: 20px;
@@ -394,13 +417,13 @@
   height: 180%;
   background: repeating-linear-gradient(to bottom, #707070 0, #707070 3px, #fff 2px, #fff 7px);
   top: 50%;
-  left: 18.5px;
+  left: 14.5px;
   font-size: 28px;
   color: #707070;
 }
 .timeline .timeline-item .timeline-status {
-  width: 41px;
-  height: 41px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: #E0E0E0;
   position: relative;
@@ -409,7 +432,7 @@
   align-items: center;
   flex-shrink: 0;
   flex-grow: 0;
-  flex-basis: 41px;
+  flex-basis: 32px;
 }
 .timeline .timeline-item.checked .timeline-status {
   background-size: 40%;
@@ -421,8 +444,8 @@
   background-image: url("/assets/images/check-icon.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 25px;
-  height: 18px;
+  width: 18.82px;
+  height: 13.69px;
   display: block;
 }
 .timeline .timeline-item.checked .timeline-text {
@@ -432,15 +455,15 @@
   background-size: 40%;
   background-color: #08312A;
   border: 1px solid #00D073;
-  padding-left: 4.5px;
+  padding-left: 3.5px;
 }
 .timeline .timeline-item.video .timeline-status::after {
   content: "";
   background-image: url("/assets/images/play-icon-2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20.24px;
-  height: 22.34px;
+  width: 13.59px;
+  height: 15px;
   display: block;
 }
 .timeline .timeline-item.video .timeline-text {
@@ -457,16 +480,17 @@
   background-image: url("/assets/images/error-icon.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 20.24px;
-  height: 22.34px;
+  width: 13.24px;
+  height: 15.34px;
   display: block;
 }
 .timeline .timeline-item.error .timeline-text {
   color: #041E19;
 }
 .timeline .timeline-item .timeline-text {
-  font-size: 20px;
+  font-size: 14px;
   color: #949d9b;
+  line-height: 19px;
 }
 .timeline .timeline-item.current .timeline-text {
   font-weight: bold;

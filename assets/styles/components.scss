@@ -6,6 +6,7 @@ $red-color: #912F30;
 
 * {
   color: #041D19;
+  box-sizing: border-box;
 }
 
 .w-xl-max-content {
@@ -34,13 +35,13 @@ font-size: clamp(#{$min-size},
 }
 
 .button-default,
-.button-primary {
+.button-primary,
+.button-dark {
   border: none;
   border-radius: 5px;
   cursor: pointer;
   padding: 11px;
-  @include fluid-font(14px, 18px);
-  ;
+  font-size: 14px;
   transition: filter .3s;
   width: max-content;
   text-decoration: none;
@@ -53,6 +54,11 @@ font-size: clamp(#{$min-size},
   &:hover {
     filter: brightness(.97);
   }
+}
+
+.button-dark {
+  background: #08312A;
+  color: #00D073;
 }
 
 .button-primary {
@@ -88,7 +94,6 @@ font-size: clamp(#{$min-size},
 
   img {
     width: 100%;
-    margin-bottom: 10px;
   }
 
   span {
@@ -97,22 +102,24 @@ font-size: clamp(#{$min-size},
     color: $dark-color;
     width: max-content;
     padding: 5px 10px;
-    @include fluid-font(12px, 16px);
+    @include fluid-font(12px, 14px);
     ;
+    line-height: 19px;
   }
 
   h4 {
     color: #041E19;
-    @include fluid-font(16px, 24px);
-    ;
-    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 500;
+    margin: 0;
   }
 
   p {
-    @include fluid-font(12px, 16px);
-    ;
+    font-size: 12px;
+    line-height: 16px;
     color: $dark-color;
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
   a {
@@ -270,32 +277,32 @@ font-size: clamp(#{$min-size},
   background: #F4F3F1;
 
   h2 {
-    @include fluid-font(20px, 32px);
-    ;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: bold;
     color: #08312A;
-    margin-bottom: 52px;
+    margin-bottom: 41px;
+    line-height: 32px;
   }
 }
 
 .breadcrumb-info {
   background: #041d19;
   color: #0ae37b;
-  padding: 50px 0;
+  padding: 30px 0;
   border-top: 2px solid #37584F;
   border-bottom: 2px solid #37584F;
 
   p {
     color: #0ae37b;
-    @include fluid-font(16px, 24px);
+    @include fluid-font(16px, 18px);
     ;
-    line-height: 32px;
+    font-weight: bold;
   }
 }
 
 .hero-breadcrumb {
   background: #08312A;
-  padding: 47px 0;
+  padding: 25px 0;
 
   a {
     color: #fff;
@@ -310,16 +317,16 @@ font-size: clamp(#{$min-size},
   }
 
   h3 {
-    @include fluid-font(20px, 32px);
-    ;
+    font-size: 22px;
+    line-height: 30px;
     color: #fff;
     margin: 0;
   }
 
   p {
     color: $primary-color;
-    @include fluid-font(20px, 32px);
-    ;
+    font-size: 22px;
+    line-height: 30px;
     font-weight: 500;
     margin: 0;
 
@@ -341,13 +348,15 @@ font-size: clamp(#{$min-size},
 .card-event {
   display: flex;
   align-items: center;
-  padding: 28px;
-  gap: 30px;
+  padding: 23px 20px;
+  gap: 20px;
   background: $primary-color;
   border-radius: 5px;
   text-decoration: none;
   color: $dark-color;
   transition: filter .3s;
+  border: 1px solid #8A8A8A;
+  height: 100%;
 
   &:hover {
     color: $dark-color;
@@ -355,18 +364,23 @@ font-size: clamp(#{$min-size},
   }
 
   h2 {
-    @include fluid-font(28px, 56px);
-    font-weight: 400;
+    @include fluid-font(28px, 42px);
+    font-weight: bold;
+    line-height: 22px;
   }
 
   span {
     @include fluid-font(14px, 18px);
     ;
+    line-height: 22px;
   }
 
   img {
-    width: auto;
-    height: 134px;
+    width: 100%;
+    max-width: 130px;
+    height: 100%;
+    max-height: 134px;
+    object-fit: contain;
   }
 }
 
@@ -374,15 +388,14 @@ font-size: clamp(#{$min-size},
   margin-bottom: 2em;
 
   @media screen and (min-width: 1200px) {
-    padding-right: 4rem;
+    padding-right: 1rem;
     margin-bottom: 0;
   }
 
   .accordion-button {
     background: $dark-color;
     color: $primary-color;
-    @include fluid-font(14px, 18px);
-    ;
+    font-size: 18px;
 
     &::after {
       content: '';
@@ -425,8 +438,8 @@ font-size: clamp(#{$min-size},
 
     label,
     a {
-      @include fluid-font(14px, 18px);
-      ;
+      font-size: 16px;
+      line-height: 21px;
       flex: 1;
       cursor: pointer;
       text-decoration: none;
@@ -478,7 +491,7 @@ font-size: clamp(#{$min-size},
     }
 
     display: flex;
-    gap: 26px;
+    gap: 20px;
     align-items: center;
     position: relative;
     margin-top: 20px;
@@ -494,14 +507,14 @@ font-size: clamp(#{$min-size},
           #fff 2px,
           #fff 7px);
       top: 50%;
-      left: 18.5px;
+      left: 14.5px;
       font-size: 28px;
       color: #707070;
     }
 
     .timeline-status {
-      width: 41px;
-      height: 41px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       background: #E0E0E0;
       position: relative;
@@ -510,7 +523,7 @@ font-size: clamp(#{$min-size},
       align-items: center;
       flex-shrink: 0;
       flex-grow: 0;
-      flex-basis: 41px;
+      flex-basis: 32px;
     }
 
     &.checked {
@@ -524,8 +537,8 @@ font-size: clamp(#{$min-size},
           background-image: url('/assets/images/check-icon.png');
           background-repeat: no-repeat;
           background-size: contain;
-          width: 25px;
-          height: 18px;
+          width: 18.82px;
+          height: 13.69px;
           display: block;
         }
       }
@@ -540,15 +553,15 @@ font-size: clamp(#{$min-size},
         background-size: 40%;
         background-color: #08312A;
         border: 1px solid #00D073;
-        padding-left: 4.5px;
+        padding-left: 3.5px;
 
         &::after {
           content: '';
           background-image: url('/assets/images/play-icon-2.png');
           background-repeat: no-repeat;
           background-size: contain;
-          width: 20.24px;
-          height: 22.34px;
+          width: 13.59px;
+          height: 15px;
           display: block;
         }
       }
@@ -570,8 +583,8 @@ font-size: clamp(#{$min-size},
           background-image: url('/assets/images/error-icon.png');
           background-repeat: no-repeat;
           background-size: contain;
-          width: 20.24px;
-          height: 22.34px;
+          width: 13.24px;
+          height: 15.34px;
           display: block;
         }
       }
@@ -582,8 +595,9 @@ font-size: clamp(#{$min-size},
     }
 
     .timeline-text {
-      font-size: 20px;
+      font-size: 14px;
       color: #949d9b;
+      line-height: 19px;
     }
 
     &.current {
