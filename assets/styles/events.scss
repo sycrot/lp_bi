@@ -18,7 +18,7 @@
 }
 
 #cursosEEventosPage {
-  padding: 83px 0;
+  padding: 40px 0;
   background: #F4F3F1;
 }
 
@@ -27,11 +27,12 @@
   background-color: #F4F3F1;
 
   h1 {
-    margin-bottom: 46px;
+    margin: 0;
     max-width: 938px;
     font-size: 24px;
     font-weight: bold;
     line-height: 32px;
+    margin-right: 2em;
   }
 
   .video-content {
@@ -65,6 +66,10 @@
   }
 
   .quiz-content {
+    @media screen and (min-width: 1080px) {
+      padding-right: 10rem;
+    }
+
     p {
       font-size: 18px;
       color: #041D19;
@@ -118,6 +123,14 @@
   }
 
   .satisfaction-survey {
+    @media screen and (min-width: 1080px) {
+      padding-right: 8rem;
+    }
+
+    .button-primary {
+      margin-left: auto;
+    }
+
     p {
       font-size: 18px;
     }

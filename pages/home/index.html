@@ -16,7 +16,7 @@
 
     <div class="site-nav">
       <div class="container">
-        <div class="d-flex gap-1 gap-md-4 justify-content-end">
+        <div class="d-flex gap-3 gap-md-1 gap-md-4 justify-content-end">
           <a href="#">Dados pessoais</a>
           <a href="#">Contato</a>
           <a href="#">Sobre a Boehringer Ingelheim</a>
@@ -40,7 +40,7 @@
           </button>
           <div class="collapse navbar-collapse mt-5 mt-md-0"
             id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 ms-5" style="flex:1">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-md-5" style="flex:1">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -69,33 +69,11 @@
                   360</a>
               </li>
             </ul>
-            <!-- not logged in -->
-            <!-- <div class="d-flex mt-5 ms-md-5 mt-md-0 ms-auto gap-3">
-              <button class="button-primary">Cadastre-se</button>
-              <button class="button-primary">Login</button>
-            </div> -->
-
-            <form
-              class="d-flex flex-column flex-xxl-row mt-5 ms-md-4 mt-md-0 ms-auto">
-              <li
-                class="nav-item dropdown list-unstyled d-flex align-items-center">
-                <a href="#"
-                  class="nav-link dropdown-toggle dropdown-primary d-flex align-items-center gap-1"
-                  data-bs-toggle="dropdown" role="button"
-                  aria-expanded="false">Olá <b>Usuário</b></a>
-                <ul class="dropdown-menu">
-                  <a href="#" class="dropdown-item">AVC</a>
-                  <a href="#" class="dropdown-item">IAM</a>
-                  <a href="#" class="dropdown-item">DPOC</a>
-                </ul>
-              </li>
-              <div class="d-flex gap-3 align-items-center">
-                <button class="button-primary px-3">Sair</button>
-                <button class="btn button-submit"
-                  type="submit"><img
-                    src="../../assets/images/magnifying-glass.png" /></button>
-              </div>
-            </form>
+            <div
+              class="d-flex mt-5 ms-md-5 mt-md-0 ms-auto gap-3">
+              <button class="button-primary px-3">Cadastre-se</button>
+              <button class="button-primary px-3">Login</button>
+            </div>
           </div>
         </div>
       </nav>
@@ -130,7 +108,7 @@
 
     </section>
 
-    <section id="navigation">
+    <section id="navigation" class="bg-white">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4">
@@ -327,7 +305,7 @@
       <div class="container">
         <div class="content-1">
           <h1>Vamos falar também de DPOC?</h1>
-          <h5>Sintomas:</h5>
+          <h5>Conheça os principais sintomas:</h5>
           <div class="row">
             <div class="col-12 col-md-3">
               <div class="card">
@@ -406,32 +384,39 @@
       </div>
       <div class="content-3">
         <div class="container">
-          <div class="d-flex flex-column flex-md-row">
-            <div class="info-1">
-              A doença pulmonar obstrutiva crônica, ou DPOC, refere-se a um
-              grupo
-              de
-              doenças, como enfisema e bronquite crônica, que causam bloqueio do
-              fluxo de saída do ar nos pulmões e problemas
-              respiratórios.<sup>1</sup>
+          <div class="row">
+            <div class="col-12 col-md-6 p-0">
+              <div class="info-1">
+                A doença pulmonar obstrutiva crônica, ou DPOC, refere-se a um
+                grupo
+                de
+                doenças, como enfisema e bronquite crônica, que causam bloqueio
+                do
+                fluxo de saída do ar nos pulmões e problemas
+                respiratórios.<sup>1</sup>
+              </div>
             </div>
-            <div class="card-info card-bg-dark-green">
-              <div class="card-info-content">
-                <p style="text-align: left;">Embora seja uma doença crônica e
-                  sem
-                  cura, a DPOC é prevenível e tratável.<sup>2</sup> O tratamento
-                  visa melhorar os sintomas, a qualidade de vida e a função
-                  pulmonar.<sup>1</sup>
-                  <br /><br />
-                  <b>Em caso de sinais e sintomas procure atendimento
-                    médico.</b></p>
-                <div class="dot">
-                  <img src="../../assets/images/info.png" alt="Informação">
+            <div class="col-12 col-md-6 p-0">
+              <div class="card-info card-bg-dark-green">
+                <div class="card-info-content">
+                  <p style="text-align: left;">Embora seja uma doença crônica e
+                    sem
+                    cura, a DPOC é prevenível e tratável.<sup>2</sup> O
+                    tratamento
+                    visa melhorar os sintomas, a qualidade de vida e a função
+                    pulmonar.<sup>1</sup>
+                    <br /><br />
+                    <b>Em caso de sinais e sintomas procure atendimento
+                      médico.</b></p>
+                  <div class="dot">
+                    <img src="../../assets/images/info.png" alt="Informação">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -475,7 +460,7 @@
               <img src="../../assets/images/Boehringer_Logo_RGB_.png" />
             </div>
           </div>
-          <div class="col-12 col-md-6 p-md-0 mt-5 mt-md-4 px-0 px-md-5">
+          <div class="col-12 col-md-6 p-md-0 mt-5 mt-md-4 px-0 px-md-3">
             <div
               class="d-flex gap-5 justify-content-center flex-column flex-md-row align-items-center align-items-md-start">
               <a href="#">Política de
@@ -486,7 +471,8 @@
                 href="#">Contato</a>
             </div>
             <span>&copy; 2024 Boehringer Ingelheim do Brasil Química e
-              Farmacêutica Ltda. CNPJ 60.831.658/0001-77. Todos os direitos
+              Farmacêutica Ltda. CNPJ 60.831.658/0001-77.<br /> Todos os
+              direitos
               reservados. Ultima atualização: Fevereiro 2019. Material
               científico destinado a profissionais de saúde.</span>
           </div>

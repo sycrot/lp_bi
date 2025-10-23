@@ -17,7 +17,7 @@
 }
 
 #cursosEEventosPage {
-  padding: 83px 0;
+  padding: 40px 0;
   background: #F4F3F1;
 }
 
@@ -26,11 +26,12 @@
   background-color: #F4F3F1;
 }
 #content h1 {
-  margin-bottom: 46px;
+  margin: 0;
   max-width: 938px;
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
+  margin-right: 2em;
 }
 #content .video-content .video-info {
   display: flex;
@@ -56,6 +57,11 @@
   font-size: 16px;
   margin: 0;
   line-height: 21px;
+}
+@media screen and (min-width: 1080px) {
+  #content .quiz-content {
+    padding-right: 10rem;
+  }
 }
 #content .quiz-content p {
   font-size: 18px;
@@ -101,6 +107,14 @@
   margin: 0;
   border-radius: 10px;
   cursor: pointer;
+}
+@media screen and (min-width: 1080px) {
+  #content .satisfaction-survey {
+    padding-right: 8rem;
+  }
+}
+#content .satisfaction-survey .button-primary {
+  margin-left: auto;
 }
 #content .satisfaction-survey p {
   font-size: 18px;

@@ -109,15 +109,6 @@
   background-image: url('../images/chevron-down-green.png');
 }
 
-
-.button-primary {
-  border: none;
-  padding: 6px 25px;
-  border-radius: 5px;
-  background-color: #00D073;
-  color: #08312A;
-}
-
 #headBanner {
   background: #002d25;
   color: #ffffff;
@@ -169,7 +160,7 @@
 }
 
 #avc {
-  background: #faf9f8;
+  background: #fff;
 }
 
 #avc h1 {
@@ -301,7 +292,7 @@
 }
 
 .card-info .card-info-content .dot {
-  padding: 20px;
+  padding: 14px;
   height: max-content;
 }
 
@@ -399,6 +390,7 @@
 
 #dpoc {
   padding-top: 76px;
+  background: #F4F3F1;
 }
 
 #dpoc h1 {
@@ -469,29 +461,30 @@
 }
 
 #dpoc .content-3 {
+  margin: 0 auto;
   margin-top: 41px;
-  background: linear-gradient(90deg, #FAF9F8 50%, #08312A 50%);
+  background: linear-gradient(90deg, #Fff 50%, #08312A 50%);
 }
 
 
 #dpoc .content-3 .info-1 {
-  background: #FAF9F8;
+  background: #fff;
   padding: 40px 0;
   font-size: 22px;
   line-height: 32px;
   padding-right: 127px;
   color: #191919;
-  width: 50%;
-}
-
-#dpoc .content-3 .card-info {
-  width: 50%;
+  height: 100%;
 }
 
 #dpoc .card-info-content p {
   padding-top: 40px;
   padding-left: 55px;
   margin: 0;
+}
+
+#dpoc .card-info-content sup {
+  color: #faf9f8;
 }
 
 #abracarAVida {
@@ -598,12 +591,13 @@ footer span {
   }
 
   #dpoc .content-3 {
-    background: linear-gradient(180deg, #FAF9F8 36.3%, #08312A 36.3%);
+    background: none;
   }
 
   #dpoc .content-3 .info-1 {
     width: 100%;
-    padding-right: 0;
+    padding-left: 55px;
+    padding-right: 30px;
   }
 
   #dpoc .content-3 .card-info {

@@ -40,7 +40,7 @@ font-size: clamp(#{$min-size},
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 11px;
+  padding: 11px 8px;
   font-size: 14px;
   transition: filter .3s;
   width: max-content;
@@ -62,10 +62,14 @@ font-size: clamp(#{$min-size},
 }
 
 .button-primary {
+  background-color: #00D073;
+  color: #08312A;
+
   &:disabled {
     background: #E4E4E4;
     color: #909997;
     cursor: default;
+    border: 1px solid #B1B1B0;
 
     &:hover {
       filter: none;
@@ -392,6 +396,11 @@ font-size: clamp(#{$min-size},
     margin-bottom: 0;
   }
 
+  .accordion-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .accordion-button {
     background: $dark-color;
     color: $primary-color;
@@ -431,8 +440,8 @@ font-size: clamp(#{$min-size},
     }
 
     input {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       cursor: pointer;
     }
 
@@ -444,9 +453,9 @@ font-size: clamp(#{$min-size},
       cursor: pointer;
       text-decoration: none;
       color: #041D19;
-      height: 60px;
       display: flex;
       align-items: center;
+      padding: 10px 0;
 
       &.disabled {
         color: #b3bbba;
@@ -576,7 +585,7 @@ font-size: clamp(#{$min-size},
         background-size: 40%;
         background-color: #9A1616;
         border: 1px solid #410A0A;
-        padding-left: 2.5px;
+        padding-left: 0.3px;
 
         &::after {
           content: '';

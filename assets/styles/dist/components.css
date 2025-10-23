@@ -20,7 +20,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  padding: 11px;
+  padding: 11px 8px;
   font-size: 14px;
   transition: filter 0.3s;
   width: max-content;
@@ -45,10 +45,15 @@
   color: #00D073;
 }
 
+.button-primary {
+  background-color: #00D073;
+  color: #08312A;
+}
 .button-primary:disabled {
   background: #E4E4E4;
   color: #909997;
   cursor: default;
+  border: 1px solid #B1B1B0;
 }
 .button-primary:disabled:hover {
   filter: none;
@@ -324,6 +329,10 @@
     margin-bottom: 0;
   }
 }
+.accordion .accordion-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .accordion .accordion-button {
   background: #041E19;
   color: #00D073;
@@ -354,8 +363,8 @@
   filter: brightness(0.9);
 }
 .accordion .checkbox-filter input {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
 }
 .accordion .checkbox-filter label,
@@ -366,9 +375,9 @@
   cursor: pointer;
   text-decoration: none;
   color: #041D19;
-  height: 60px;
   display: flex;
   align-items: center;
+  padding: 10px 0;
 }
 .accordion .checkbox-filter label.disabled,
 .accordion .checkbox-filter a.disabled {
@@ -473,7 +482,7 @@
   background-size: 40%;
   background-color: #9A1616;
   border: 1px solid #410A0A;
-  padding-left: 2.5px;
+  padding-left: 0.3px;
 }
 .timeline .timeline-item.error .timeline-status::after {
   content: "";
